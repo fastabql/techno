@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cullen's Bite Landing Page</title>
+	<!----custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	 <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!---header design--->
+	<header>
+		<a href="#" class="logo"></i>Cullen's Bite</a>
+
+		<div class="header-icons">
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+
+	<!---home design--->
+	<section class="home">
+		<div class="home-img">
+			<img src="img/home.png" class="one">
+		</div>
+
+		<div class="home-text">
+			<h1>Cullen's <br> Bite</h1>
+			<h5>Cullen's Bite menyajikan kemudahan dalam pemesanan tempat makan yang kamu inginkan ! berbagai retoran terkenal dengan makanan terbaik kami sajikan untuk kalian semua mulai dari hidangan tradisioanal dan internasional kami suguhkan untuk kenyamanan kalian semua. <br>
+				<a href="https://www.figma.com/file/3ymTjGA17H5xIhIuNUpITg/Cullens-Bite?type=design&node-id=0%3A1&t=aioBNIWzQESEFO5G-1">Klik disini</a> 
+				untuk melihat design figma projek kami secara lebih lengkap..</h5>
+			<a href="#" class="btn">Klik "Klik Disini" Pada Pojok Kanan Bawah Jika Tertarik Pada Projek Kami</a>
+		</div>
+	</section>
+
+	<div class="main">
+		<div class="row">
+			<li><span onclick="slider('img/home.png')">Home</span></li>
+		</div>
+
+		<div class="row row2">
+			<li><span onclick="slider('img/reservasi.png')">Reserv</span></li>
+		</div>
+
+		<div class="row row3">
+			<li><span onclick="slider('img/resto.png')">Resto</span></li>
+		</div>
+
+		<div class="row row4">
+			<li><span onclick="slider('img/pesanan.png')">Pesan</span></li>
+		</div>
+
+		<div class="row row5">
+			<li><span onclick="slider('img/chat.png')">Chat</span></li>
+		</div>
+
+	</div>
+
+	<a href="https://forms.gle/FqSj7imT4QCppHfa8" class="bottom">Klik Disini<i class='bx bx-down-arrow-circle' ></i></a>
+
+	<script type="text/javascript">
+		function slider(anything){
+			document.querySelector('.one').src = anything;
+		};
+
+		let menu = document.querySelector('#menu-icon');
+		let navbar = document.querySelector('.navbar');
+
+		menu.onclick = () => {
+			menu.classList.toggle('bx-x');
+			navbar.classList.toggle('open');
+		}
+	</script>
+
+</body>
+</html>
